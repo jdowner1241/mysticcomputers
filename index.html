@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>index</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="icon" href="img/icons8-monitor-64.png"/>
+    </head>
+    <body>
+        <!-- Navbar HeaderS -->
+        <div class="headers">
+          <!-- Navbar Header1 -->
+          <div id="header1">
+              <nav class="navbar navbar-expand-lg navbar-light bg-light header1">
+                  <!-- Container wrapper -->
+                  <div class="container-fluid containerjd">
+                  <div class="header1-1">
+                      <img src="img/indexbutton1.png" id="titleindexbutton"/>
+                      <a id="titleindex">Mystic Computers</a> 
+                  </div>
+                  <div class="header1-2 row">
+                    <form id="search-form" action="/product.html">
+                      <input class="form-control border-secondary rounded-pill " type="search" placeholder="search" id="search-input" name="query">
+                    </form>
+                  </div>
+                  <!-- Collapsible wrapper -->
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  </div>
+                  <!-- Collapsible wrapper -->
+                  <!-- Right elements -->
+                  <div class="d-flex align-items-center">
+                      <!-- Icon -->
+                      <button class="rounded me-3">
+                        <a class="text-reset" href="cart.html"><i class="bi bi-bag-fill"></i></a>
+                      </button> 
+                      <!-- Notifications -->
+                      <div class="dropdown me-3">
+                        <button onclick="togglenotification()" class="rounded">
+                          <i class="bi bi-bell-fill"></i>
+                        </button>
+                        <div id="notification-form" class="dropdown-content">
+                          <form style="background-color: #020414; padding: 20px; width: 300px;">
+                            <h5 class="mx-2 mb-3 text-primary">Notifications</h5>
+                            <ul class="list-group notification1">
+                              <li class="list-group-item">Alert 1</li>
+                              <li class="list-group-item">Alert 2</li>
+                              <li class="list-group-item">Alert 2</li>
+                              <li class="list-group-item">Alert 3</li>
+                              <li class="list-group-item">Alert 3</li>
+                            </ul>
+                          </form>
+                        </div>
+                      </div>
+
+                      <!-- Avatar --> 
+                  </div>
+                  <div class="dropdown">
+                    <button onclick="toggleSignIn()" class="rounded">
+                      <i class="bi bi-person-lines-fill"></i>
+                    </button>
+                    <div id="signin-form" class="dropdown-content">
+                      <form style="background-color: #020414; padding: 20px; width: 300px;">
+                        <h5 class="mx-2 mb-3 text-primary">Sign In</h5>
+                        <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder="Enter Email" name="email" required>
+                      
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+                      
+                        <button type="submit" onclick="signIn()">Login</button>
+                      </form>
+                    </div>
+                  </div>
+                  <!-- Right elements -->
+                  </div>
+                  <!-- Container wrapper -->
+              </nav>
+          </div>
+          <!-- Navbar Header1 -->
+          <!-- Navbar Header2 -->
+          <div id="header2">
+              <nav class="navbar navbar-expand-lg bg-body-tertiary header2">
+                  <div class="container">
+                    <div class="collapse navbar-collapse d-flex justify-content-evenly" id="navbarNav">
+                      <ul class="navbar-nav">
+                        <li class="nav-item">
+                          <a class="nav-link px-5 mx-5" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link px-5 mx-5" href="category.html">Category</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link px-5 mx-5" href="savedlist.html">Saved List</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link px-5 mx-5" href="support.html">Support</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </nav>
+          </div>
+          <!-- Navbar Header2 -->
+        </div>
+        <!-- Navbar HeaderS -->
+        <!-- Mainpage overview -->
+        <div class="container-fluid text-center">
+            <div class="mainbody row containerjd">
+                <!-- page content -->
+                <div class="cbody">
+                    <div id="homeslider">
+                        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="img/Zenbook_Duo_14_Ux482_deals.png" class="d-block w-100 slideshow" alt="Zenbook">
+                                <div class="carousel-caption d-none d-md-block bg-primary rounded homesliderheader" style="padding: 20px;">
+                                      <h5 class="card-title">ZenBook Duo 14</h5>
+                                      <h5 class="card-text">Model: Ux482</h5>
+                                      <p class="card-text bg-danger">Save 20%</p>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img src="img/Ps5.jpg" class="d-block w-100 slideshow" alt="ps5">
+                                <div class="carousel-caption d-none d-md-block bg-primary rounded homesliderheader" style="padding: 20px;">
+                                  <h5 class="card-title">PS5</h5>
+                                  <p class="card-text bg-danger">Save 30%</p>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img src="img/OIP.jpg" class="d-block w-100 slideshow" alt="macbook">
+                                <div class="carousel-caption d-none d-md-block bg-primary rounded homesliderheader" style="padding: 20px;">
+                                  <h5 class="card-title">Macbook pro 2023</h5>
+                                  <p class="card-text bg-danger">save 10%</p>
+                                </div>
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                    </div>
+                    <div class="cbodyh">
+                      <!-- hrecommends-->
+                      <div class="card border-info mb-3 container text-center  hrecommends" style="max-width: 35rem;">
+                        <div class="card-header fs-4 cardheadercustom ">Recommendations</div>
+                        <!-- card offers -->
+                        <div id="hrecommend" class="card-body container text-center">
+                          <div id="hrecommendoffers" class="row row-cols-1 row-cols-md-2 g-4 mt-0.5">
+                            <div id="hrecommend1" class="col d-flex justify-content-evenly">
+                              <div class="card cardinbox">
+                                <a href="product.html?product=HP_27h_Full_HD_Monitor">
+                                  <img src="img/HP 27h Full HD Monitor.jpg" class="card-img-top" alt="HP 27h Full HD Monitor">
+                                  <div class="card-body cardbodyinbox">  
+                                    <h5 class="card-title">HP 27" Full HD Monitor</h5>
+                                    <h5 class="card-title">$159.99</h5>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                            <div id="hrecommend2" class="col d-flex justify-content-evenly">
+                              <div class="card cardinbox">
+                                <a href="product.html?product=Acer_Nitro_5_AN515-57-79TD_Gaming_Laptop">
+                                  <img src="img/Acer Nitro 5 AN515-57-79TD Gaming Laptop.jpg" class="card-img-top" alt="Acer Nitro 5 AN515-57-79TD Gaming Laptop">
+                                  <div class="card-body cardbodyinbox">
+                                    <h5 class="card-title">Acer Nitro 5 Gaming Laptop</h5>
+                                    <h5 class="card-title">$739.99</h5>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                            <div id="hrecommend3" class="col d-flex justify-content-evenly">
+                              <div class="card cardinbox">
+                                <a href="product.html?product=Dell_2022_Newest_Inspiron_15_Laptop">
+                                  <img src="img/Dell 2022 Newest Inspiron 15 Laptop.jpg" class="card-img-top" alt="Dell 2022 Newest Inspiron 15 Laptop">
+                                  <div class="card-body cardbodyinbox">
+                                    <h5 class="card-title">Dell 2022 Newest Inspiron 15" Laptop</h5>
+                                    <h5 class="card-title">$411</h5>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                            <div id="hrecommend4" class="col d-flex justify-content-evenly">
+                              <div class="card cardinbox">
+                                <a href="product.html?product=Samsung_Galaxy_S20">
+                                  <img src="img/Samsung Galaxy S20.jpg" class="card-img-top" alt="Samsung Galaxy S20">
+                                  <div class="card-body cardbodyinbox">
+                                    <h5 class="card-title">Samsung Galaxy S20</h5>
+                                    <h5 class="card-title">$200.95</h5>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- card offers -->
+                      </div>
+                      <!-- hrecommends-->
+                      <!-- hdeals-->
+                      <div class="card border-info mb-3 container text-center hdeals" style="max-width: 35rem;">
+                        <div class="card-header cardheadercustom fs-4 ">Top Deals</div>
+                        <!-- card offers -->
+                        <div id="hdeal" class="card-body container text-center ">
+                          <div id="hdealoffers" class="row row-cols-1 row-cols-md-2 g-4 mt-0.5">
+                            <div id="hdeal1" class="col d-flex justify-content-evenly">
+                              <div class="card cardinbox">
+                                <a href="product.html?product=Acer_21.5_Inch_Monitor">
+                                  <img src="img/Acer 21.5 Inch Full HD (1920 x 1080) IPS Ultra-Thin Zero Frame Computer Monitor (HDMI & VGA Port).jpg" class="card-img-top" alt="Acer 21.5 Inch Full HD Monitor">
+                                  <div class="card-body cardbodyinbox">
+                                    <h5 class="card-title">Acer 21.5 Inch Full HD Monitor</h5>
+                                    <h5 class="card-title">$89.99</h5>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                            <div id="hdeal2" class="col d-flex justify-content-evenly">
+                              <div class="card cardinbox">
+                                <a href="product.html?product=SAMSUNG_23.5_CF396_Curved_Computer_Monitor">
+                                  <img src="img/SAMSUNG 23.5  CF396 Curved Computer Monitor_.jpg" class="card-img-top" alt="SAMSUNG 23.5  CF396 Curved Computer Monitor">
+                                  <div class="card-body cardbodyinbox">
+                                    <h5 class="card-title">SAMSUNG 23.5 Curved Monitor</h5>
+                                    <h5 class="card-title">$119.99</h5>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                            <div id="hdeal3" class="col d-flex justify-content-evenly">
+                              <div class="card cardinbox">
+                                <a href="product.html?product=INSIGNIA_42-inch_Class_F20_Series_Smart_Full_HD_1080p_Fire_TV">
+                                  <img src="img/INSIGNIA 42-inch Class F20 Series Smart Full HD 1080p Fire TV.jpg" class="card-img-top" alt="INSIGNIA 42-inch Class F20 Series Smart Full HD 1080p Fire TV">
+                                  <div class="card-body cardbodyinbox">
+                                    <h5 class="card-title">INSIGNIA 42" Smart Full HD 1080p Fire TV</h5>
+                                    <h5 class="card-title">$179.99</h5>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                            <div id="hdeal4" class="col d-flex justify-content-evenly">
+                              <div class="card cardinbox">
+                                <a href="product.html?product=HP_DeskJet_2755e_Wireless_Color_All-in-One_Printer">
+                                  <img src="img/HP DeskJet 2755e Wireless Color All-in-One Printer.jpg" class="card-img-top" alt="HP DeskJet 2755e Wireless Color All-in-One Printer">
+                                  <div class="card-body cardbodyinbox">
+                                    <h5 class="card-title">HP DeskJet Wireless All-in-One Printer</h5>
+                                    <h5 class="card-title">$84.89</h5>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- card offers -->
+                      </div>
+                      <!-- hdeals-->
+                      <!-- hreviews-->
+                      <div class="card border-info mb-3 container text-center hreviews" style="max-width: 35rem;">
+                        <div class="card-header cardheadercustom fs-4 ">Top Reviews</div>
+                        <!-- card offers -->
+                        <div id="hreview" class="card-body container text-center ">
+                          <div id="hreviewoffers" class="row row-cols-1 row-cols-md-2 g-4 mt-0.5">
+                            <div id="hreview1" class="col d-flex justify-content-evenly">
+                              <div class="card cardinbox">
+                                <a href="product.html?product=ASUS_Newest_Zenbook_14">
+                                  <img src="img/ASUS Newest Zenbook 14.png" class="card-img-top" alt="ASUS Newest Zenbook 14">
+                                  <div class="card-body cardbodyinbox">
+                                    <h5 class="card-title">ASUS Newest Zenbook 14</h5>
+                                    <h5 class="card-title">$799.00</h5>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                            <div id="hreview2" class="col d-flex justify-content-evenly">
+                              <div class="card cardinbox">
+                                <a href="product.html?product=Uiosmuph_LED_Wireless_Mouse">
+                                  <img src="img/Uiosmuph LED Wireless Mouse.jpg" class="card-img-top" alt="Uiosmuph LED Wireless Mouse">
+                                  <div class="card-body cardbodyinbox">
+                                    <h5 class="card-title">Uiosmuph LED Wireless Mouse</h5>
+                                    <h5 class="card-title">$11.02</h5>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                            <div id="hreview3" class="col d-flex justify-content-evenly">
+                              <div class="card cardinbox">
+                                <a href="product.html?product=Seagate_Portable_2TB_External_Hard_Drive_HDD">
+                                  <img src="img/Seagate Portable 2TB External Hard Drive HDD.jpg" class="card-img-top" alt="Seagate Portable 2TB External Hard Drive HDD">
+                                  <div class="card-body cardbodyinbox">
+                                    <h5 class="card-title">Seagate Portable 2TB External Hard Drive HDD</h5>
+                                    <h5 class="card-title">$56.99</h5>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                            <div id="hreview4" class="col d-flex justify-content-evenly">
+                              <div class="card cardinbox">
+                                <a href="product.html?product=Dacoity_Gaming_Keyboard">
+                                  <img src="img/Dacoity Gaming Keyboard.jpg" class="card-img-top" alt="Dacoity Gaming Keyboard">
+                                  <div class="card-body cardbodyinbox">
+                                    <h5 class="card-title">Dacoity Gaming Keyboard</h5>
+                                    <h5 class="card-title">$29.99</h5>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- card offers -->
+                      </div>
+                      <!-- hreviews-->
+                    </div>
+                </div>
+                <!-- page content -->
+            </div>
+        </div>
+        <br/>
+        <hr/>
+        <br/>
+        <!-- Mainpage overview -->
+
+        <footer class="container-fluid foot">
+          <div class="containerjd row align-content-center footcontent">
+            <div class="col d-flex justify-content-start align-items-center">
+              <h5>Mystic Computers Limited  &copy; 2023 </h5>
+            </div>
+            <div class="col d-flex justify-content-end align-items-center">
+              <a href="contactus.html">Contact Us </a>
+              <a href="www.facebook.com"><i class="bi bi-facebook p-3"></i></a>
+              <a href="www.instagram.com"><i class="bi bi-instagram"></i></a>
+              <button type="button" class="btn bi bi-whatsapp p-3" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Phone No: 1(876)697-8422">
+              </button>
+            </div>
+          </div> 
+        </footer>
+        <!-- script -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <script src="script/script.js"></script>
+        <script src="script/fetchproduct.js"></script>
+        <script src="script/fetchproductselect.js"></script>
+    </body>
+</html>

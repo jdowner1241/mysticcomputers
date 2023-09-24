@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="icon" href="img/icons8-monitor-64.png"/>
+</head>
+<body>
+        <!-- Navbar HeaderS -->
+        <div class="headers">
+            <!-- Navbar Header1 -->
+            <div id="header1">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light header1">
+                    <!-- Container wrapper -->
+                    <div class="container-fluid containerjd">
+                    <div class="header1-1">
+                        <img src="img/indexbutton1.png" id="titleindexbutton"/>
+                        <a id="titleindex">Mystic Computers</a> 
+                    </div>
+                    <div class="header1-2">
+                        <input class="form-control border-secondary rounded-pill " type="search" placeholder="search" id="search" >
+                    </div>
+                    <!-- Collapsible wrapper -->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    </div>
+                    <!-- Collapsible wrapper -->
+                    <!-- Right elements -->
+                    <div class="d-flex align-items-center">
+                        <!-- Icon -->
+                        <button class="rounded me-3">
+                            <a class="text-reset" href="cart.html"><i class="bi bi-bag-fill"></i></a>
+                          </button> 
+                        <!-- Notifications -->
+                        <div class="dropdown me-3">
+                          <button onclick="togglenotification()" class="rounded">
+                            <i class="bi bi-bell-fill"></i>
+                          </button>
+                          <div id="notification-form" class="dropdown-content">
+                            <form style="background-color: #020414; padding: 20px; width: 300px;">
+                              <h5 class="mx-2 mb-3 text-primary">Notifications</h5>
+                              <ul class="list-group notification1">
+                                <li class="list-group-item">Alert 1</li>
+                                <li class="list-group-item">Alert 2</li>
+                                <li class="list-group-item">Alert 2</li>
+                                <li class="list-group-item">Alert 3</li>
+                                <li class="list-group-item">Alert 3</li>
+                              </ul>
+                            </form>
+                          </div>
+                        </div>
+
+                        <!-- Avatar --> 
+                    </div>
+                    <div class="dropdown">
+                      <button onclick="toggleSignIn()" class="rounded">
+                        <i class="bi bi-person-lines-fill"></i>
+                      </button>
+                      <div id="signin-form" class="dropdown-content">
+                        <form style="background-color: #020414; padding: 20px; width: 300px;">
+                          <h5 class="mx-2 mb-3 text-primary">Sign In</h5>
+                          <label for="email"><b>Email</b></label>
+                          <input type="text" placeholder="Enter Email" name="email" required>
+                        
+                          <label for="psw"><b>Password</b></label>
+                          <input type="password" placeholder="Enter Password" name="psw" required>
+                        
+                          <button type="submit" onclick="signIn()">Login</button>
+                        </form>
+                      </div>
+                    </div>
+                    <!-- Right elements -->
+                    </div>
+                    <!-- Container wrapper -->
+                </nav>
+            </div>
+            <!-- Navbar Header1 -->
+            <!-- Navbar Header2 -->
+            <div id="header2">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary header2">
+                    <div class="container">
+                      <div class="collapse navbar-collapse d-flex justify-content-evenly" id="navbarNav">
+                        <ul class="navbar-nav">
+                          <li class="nav-item">
+                            <a class="nav-link px-5 mx-5" href="index.html">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link px-5 mx-5" href="category.html">Category</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link px-5 mx-5" href="savedlist.html">Saved List</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link px-5 mx-5" href="support.html">Support</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+            <!-- Navbar Header2 -->
+        </div>
+        <!-- Navbar HeaderS -->
+        
+        <!-- Mainpage overview -->
+        <div class="container-fluid text-center">
+            <div class="mainbody row containerjd">
+                <!-- page content -->
+                <div class="cbody">
+                    <div class="containerjd row">
+                      <div clas="container">
+                        <h2 id="productname" class="container text-center"></h2>
+                        <div class="row ">
+                          <div id="productimage" class="col-5 container"></div>
+                          <div class="col-7 row">
+                            <div class="container row">
+                                <h4 id="productcost" class="col"></h4>
+                                <div id="productaddlist" class="col" ><button class="bg-primary text-white rounded">Add to List</button></div>
+                                <div id="productaddcart" class="col" ><button class="bg-primary text-white rounded">Add to Cart</button></div>
+                            </div>
+                            <div class="row producttables">
+                              <h3 class="producttablesheader">Product Details</h3>
+                              <table id="productdetails" class="table table-striped table-borderless border-primary">
+                                <thead>
+                                  <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col"></th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">Brand</th>
+                                    <td colspan="1" id="Brand" ></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">Model</th>
+                                    <td colspan="1" id="Model" ></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">Screen Size</th>
+                                    <td colspan="2" id="Screen_Size" ></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">Color</th>
+                                    <td colspan="2" id="Color" ></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">Storage</th>
+                                    <td colspan="2" id="Storage" ></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">CPU</th>
+                                    <td colspan="2" id="CPU" ></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">Memory</th>
+                                    <td colspan="2" id="Memory" ></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">OS</th>
+                                    <td colspan="2" id="OS" ></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                        <div>
+                          <div class="producttables" >
+                            <h3 class="producttablesheader">Technical Details</h1>
+                            <table id="producttechspecs" class="table table-striped table-borderless border-primary">
+                              <thead>
+                                <tr>
+                                  <th scope="col"></th>
+                                  <th scope="col"></th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">Processor</th>
+                                  <td colspan="2" id="Processor" ></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">Chipset Brand</th>
+                                  <td colspan="2" id="Chipset_Brand" ></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">Graphics</th>
+                                  <td colspan="2" id="Graphics" ></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">Graphics Type</th>
+                                  <td colspan="2" id="Graphics_Type"></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">Video Memory Size</th>
+                                  <td colspan="2" id="Video_Memory_Size" ></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">Memory Size</th>
+                                  <td colspan="2" id="Memory_Size" ></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">Memory Speed</th>
+                                  <td colspan="2" id="Memory_Speed" ></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">Memory Type</th>
+                                  <td colspan="2" id="Memory_Type" ></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">Display</th>
+                                  <td colspan="2" id="Display" ></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">Max Screen Resolution</th>
+                                  <td colspan="2" id="Max_Screen_Resolution" ></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">Storage Size</th>
+                                  <td colspan="2" id="Storage_Size" ></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">Storage Type</th>
+                                  <td colspan="2" id="Storage_Type" ></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">Storage Feature</th>
+                                  <td colspan="2" id="Storage_Feature" ></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">Operating System</th>
+                                  <td colspan="2" id="Operating_System" ></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">Camera</th>
+                                  <td colspan="2" id="camera" ></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">Keyboard</th>
+                                  <td colspan="2" id="keyboard" ></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">Connectivity</th>
+                                  <td colspan="2" id="connectivity" ></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">Special Feature</th>
+                                  <td colspan="2" id="Special_Feature" ></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">Accessories</th>
+                                  <td colspan="2" id="accessories" ></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <div class="producttables">
+                            <h3 class="producttablesheader">Other Details</h3>
+                            <table id="productotherdetails" class="table table-striped table-borderless border-primary">
+                              <thead>
+                                <tr>
+                                  <th scope="col"></th>
+                                  <th scope="col"></th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">Brand</th>
+                                  <td colspan="1" id="brand" ></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">Series</th>
+                                  <td colspan="1"  id="series" ></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">Item model number</th>
+                                  <td colspan="2"  id="Item_model_number" ></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">Hardware Platform</th>
+                                  <td colspan="2"  id="Hardware_Platform" ></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">Item Weight</th>
+                                  <td colspan="2"  id="Item_Weight" ></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">Package Dimensions</th>
+                                  <td colspan="2"  id="Package_Dimensions" ></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <!-- page content -->
+            </div>
+        </div>
+        <br/>
+        <hr/>
+        <br/>
+        <!-- Mainpage overview -->
+
+        <div id="search-results"></div>
+
+        <footer class="container-fluid foot">
+          <div class="containerjd row align-content-center footcontent">
+            <div class="col d-flex justify-content-start align-items-center">
+              <h5>Mystic Computers Limited  &copy; 2023 </h5>
+            </div>
+            <div class="col d-flex justify-content-end align-items-center">
+              <a href="contactus.html">Contact Us </a>
+              <a href="www.facebook.com"><i class="bi bi-facebook p-3"></i></a>
+              <a href="www.instagram.com"><i class="bi bi-instagram"></i></a>
+              <button type="button" class="btn bi bi-whatsapp p-3" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Phone No: 1(876)697-8422">
+              </button>
+            </div>
+          </div> 
+        </footer>
+        <!-- script -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <script src="script/script.js"></script>
+        <script src="script/fetchproduct.js"></script>
+        <script src="script/fetchproductselect.js"></script>
+</body>
+</html>

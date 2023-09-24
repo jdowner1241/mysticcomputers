@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Support</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="icon" href="img/icons8-monitor-64.png"/>
+    </head>
+    <body>
+        <!-- Navbar HeaderS -->
+        <div class="headers">
+          <!-- Navbar Header1 -->
+          <div id="header1">
+              <nav class="navbar navbar-expand-lg navbar-light bg-light header1">
+                  <!-- Container wrapper -->
+                  <div class="container-fluid containerjd">
+                  <div class="header1-1">
+                      <img src="img/indexbutton1.png" id="titleindexbutton"/>
+                      <a id="titleindex">Mystic Computers</a> 
+                  </div>
+                  <div class="header1-2">
+                      <input class="form-control border-secondary rounded-pill " type="search" placeholder="search" id="search" >
+                  </div>
+                  <!-- Collapsible wrapper -->
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  </div>
+                  <!-- Collapsible wrapper -->
+                  <!-- Right elements -->
+                  <div class="d-flex align-items-center">
+                      <!-- Icon -->
+                      <button class="rounded me-3">
+                        <a class="text-reset" href="cart.html"><i class="bi bi-bag-fill"></i></a>
+                      </button> 
+                      <!-- Notifications -->
+                      <div class="dropdown me-3">
+                        <button onclick="togglenotification()" class="rounded">
+                          <i class="bi bi-bell-fill"></i>
+                        </button>
+                        <div id="notification-form" class="dropdown-content">
+                          <form style="background-color: #020414; padding: 20px; width: 300px;">
+                            <h5 class="mx-2 mb-3 text-primary">Notifications</h5>
+                            <ul class="list-group notification1">
+                              <li class="list-group-item">Alert 1</li>
+                              <li class="list-group-item">Alert 2</li>
+                              <li class="list-group-item">Alert 2</li>
+                              <li class="list-group-item">Alert 3</li>
+                              <li class="list-group-item">Alert 3</li>
+                            </ul>
+                          </form>
+                        </div>
+                      </div>
+
+                      <!-- Avatar --> 
+                  </div>
+                  <div class="dropdown">
+                    <button onclick="toggleSignIn()" class="rounded">
+                      <i class="bi bi-person-lines-fill"></i>
+                    </button>
+                    <div id="signin-form" class="dropdown-content">
+                      <form style="background-color: #020414; padding: 20px; width: 300px;">
+                        <h5 class="mx-2 mb-3 text-primary">Sign In</h5>
+                        <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder="Enter Email" name="email" required>
+                      
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+                      
+                        <button type="submit" onclick="signIn()">Login</button>
+                      </form>
+                    </div>
+                  </div>
+                  <!-- Right elements -->
+                  </div>
+                  <!-- Container wrapper -->
+              </nav>
+          </div>
+          <!-- Navbar Header1 -->
+          <!-- Navbar Header2 -->
+          <div id="header2">
+              <nav class="navbar navbar-expand-lg bg-body-tertiary header2">
+                  <div class="container">
+                    <div class="collapse navbar-collapse d-flex justify-content-evenly" id="navbarNav">
+                      <ul class="navbar-nav">
+                        <li class="nav-item">
+                          <a class="nav-link px-5 mx-5" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link px-5 mx-5" href="category.html">Category</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link px-5 mx-5" href="savedlist.html">Saved List</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link px-5 mx-5" href="support.html">Support</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </nav>
+          </div>
+          <!-- Navbar Header2 -->
+      </div>
+      <!-- Navbar HeaderS -->
+        <!-- Mainpage overview -->
+        <div class="container-fluid text-center">
+          <div class="mainbody">
+              <!-- page content -->
+                <div class="cbody container d-flex justify-content-evenly">
+                        <div class="bg-light container">
+                          <h2 class="h2">Support</h2>
+                          <p class="h2 lead text-muted mb-5">Find the most useful answers here.</p>
+                          <div class="row row-cols-1 row-cols-md-2 gx-5 mt-1">
+                            <div class=" col-md-4 mb-5">
+                              <div class="card shadow border-0 h-100 supportcardhover"><a href="faq.html"><img src="img/delivery-diver.jpg" alt="" class="card-img-top"></a>
+                                <div class="card-body supportcard">
+                                  <h5> <a href="faq.html" class="text-dark">Delivery</a></h5>
+                                  <p class="text-muted card-text">View popular questions asked about delivery/shipping.</p>
+                                  <p class="card-text"><a href="faq.html">Read more</a></p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class=" col-md-4 mb-5">
+                              <div class="card shadow border-0 h-100 supportcardhover"><a href="faq.html"><img src="img/paymentmethod.jpg" alt="" class="card-img-top"></a>
+                                <div class="card-body supportcard">
+                                  <h5> <a href="faq.html" class="text-dark">Payment & Promos</a></h5>
+                                  <p class="text-muted card-text">View popular questions asked about payment & promos.</p>
+                                  <p class="card-text"><a href="faq.html">Read more</a></p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class=" col-md-4 mb-5">
+                              <div class="card shadow border-0 h-100 supportcardhover"><a href="faq.html"><img src="img/Product.jpg" alt="" class="card-img-top"></a>
+                                <div class="card-body supportcard">
+                                  <h5> <a href="faq.html" class="text-dark">Product & Stock</a></h5>
+                                  <p class="text-muted card-text">View popular questions asked about product & stock.</p>
+                                  <p class="card-text"><a href="faq.html">Read more</a></p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class=" col-md-4 mb-5">
+                              <div class="card shadow border-0 h-100 supportcardhover"><a href="faq.html"><img src="img/order issues.jpg" alt="" class="card-img-top"></a>
+                                <div class="card-body supportcard">
+                                  <h5> <a href="faq.html" class="text-dark">Order Issues</a></h5>
+                                  <p class="text-muted card-text">View popular questions asked about issues you are having while making an order.</p>
+                                  <p class="card-text"><a href="faq.html">Read more</a></p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class=" col-md-4 mb-5">
+                              <div class="card shadow border-0 h-100 supportcardhover"><a href="faq.html"><img src="img/return&refund.jpg" alt="" class="card-img-top"></a>
+                                <div class="card-body supportcard">
+                                  <h5> <a href="faq.html" class="text-dark">Return & Refund</a></h5>
+                                  <p class="text-muted card-text">View popular questions asked about our return & refund procedures</p>
+                                  <p class="card-text"><a href="faq.html">Read more</a></p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class=" col-md-4 mb-5">
+                              <div class="card shadow border-0 h-100 supportcardhover"><a href="faq.html"><img src="img/satisfactionSurvey.png" alt="" class="card-img-top"></a>
+                                <div class="card-body supportcard">
+                                  <h5> <a href="faq.html" class="text-dark">Suggestion/Dispute</a></h5>
+                                  <p class="text-muted card-text">We are always appreciative of any suggestion you may have and any dispute if any arises.</p>
+                                  <p class="card-text"><a href="faq.html">Read more</a></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                <!-- page content -->
+            </div>
+          </div>
+          <br/>
+          <hr/>
+          <br/>
+          <!-- Mainpage overview -->
+        
+        <footer class="container-fluid foot">
+          <div class="containerjd row align-content-center footcontent">
+            <div class="col d-flex justify-content-start align-items-center">
+              <h5>Mystic Computers Limited  &copy; 2023 </h5>
+            </div>
+            <div class="col d-flex justify-content-end align-items-center">
+              <a href="contactus.html">Contact Us </a>
+              <a href="www.facebook.com"><i class="bi bi-facebook p-3"></i></a>
+              <a href="www.instagram.com"><i class="bi bi-instagram"></i></a>
+              <button type="button" class="btn bi bi-whatsapp p-3" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Phone No: 1(876)697-8422">
+              </button>
+            </div>
+          </div> 
+        </footer>
+        <!-- script -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <script src="script/script.js"></script>
+        <script src="script/fetchproduct.js"></script>
+        <script src="script/fetchproductselect.js"></script>
+    </body>
+</html>

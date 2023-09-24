@@ -1,0 +1,73 @@
+[{
+    "name": "ASUS ZenBook 13 OLED Ultra-Slim Laptop",
+    "price": 719.00,
+    "brand": "ASUS",
+    "series": "ASUS ZenBook 13",
+    "image": "img/ASUS ZenBook 13 OLED Ultra-Slim Laptop.png",
+    "screenSize": "13.3 Inches",
+    "color": "Pine Grey",
+    "hardDiskSize": "512 GB",
+    "cpuModel": "Ryzen 7 5700U",
+    "ramMemoryInstalledSize": "8 GB",
+    "operatingSystem": "Windows 11",
+    "specialFeature": "Numeric Keypad",
+    
+    "about": {
+      "display": "13.3 inch OLED 400nits Full HD (1920 x 1080) Wide View 4-way NanoEdge bezel display",
+      "processor": "AMD Ryzen 7 5700U Processor (Up to 4.3GHz, 8 cores, 8M Cache) with AMD Radeon Graphics",
+      "storage": "Fast storage and memory featuring 512GB PCIe NVMe M.2 SSD with 8GB LPDDR4X RAM",
+      "camera": "Built-in IR camera for facial recognition sign in with Windows Hello",
+      "keyboard": "ErgoLift hinge and backlit keyboard and NumberPad",
+      "connectivity": "Extensive connectivity with HDMI 2.0b, USB 3.2 Type-C, USB 3.2 Type-A, Wi-Fi 5(802.11ac), Bluetooth 4.2, and Micro SD card reader",
+      "portability": "Sleek and lightweight 2.51 lbs for comfortable portability",
+      "reliability": "MIL-STD 810H military standard for reliability and durability",
+      "accessories": "Carry sleeve, USB-A to gigabit ethernet adapter and USB-C to audio jack adapter are included"
+    },
+    {
+        "Brand": "ASUS",
+        "Series": "Zenbook",
+        "Screen Size": "14 Inches",
+        "Hard Disk Size": "1 TB",
+        "CPU Model": "Core i5",
+        "Ram Memory Installed Size": "8 GB",
+        "Operating System": "Windows 11",
+        "Special Feature": "Backlit Keyboard,Fingerprint Reader",
+        "Card Description": "Integrated",
+        "Graphics Coprocessor": "Intel Iris Xe Graphics",
+        "Price": "$799.00",
+        "Description": "ASUS Newest Zenbook 14 2.8K (2880 x 1800) 90Hz OLED Laptop, 12th Gen Core i5-1240P Processor (Beats i7-1185G7), Backlit Keyboard, Fingerprint Reader, Harman Kardon, Win 11 (8GB RAM | 1TB PCIe SSD)",
+        "Technical Details": {
+        "Standing screen display size": "14 Inches",
+        "Max Screen Resolution": "2880x 1800 Pixels",
+        "Processor": "4.4 GHz core_i5",
+        "RAM": "8 GB DDR4",
+        "Memory Speed": "2666 MHz",
+        "Hard Drive": "1 TB SSD",
+        "Graphics Coprocessor": "Intel Iris Xe Graphics",
+        "Chipset Brand": "Intel",
+        "Card Description": "Integrated",
+        "Graphics Card Ram Size": "1 GB",
+        "Wireless Type": "Bluetooth"
+        },
+        "Other Technical Details": {
+        "Brand": "ASUS",
+        "Series": "Zenbook",
+        "Item model number": "Zenbook",
+        "Hardware Platform": "PC",
+        "Operating System": "Windows 11",
+        "Item Weight": "5.59 pounds",
+        "Package Dimensions": "16.3 x 11.18 x 2.87 inches",
+        "Processor Brand": "Intel",
+        "Number of Processors": "12",
+        "Computer Memory Type": "DDR4 SDRAM",
+        "Flash Memory Size": "1 TB",
+        "Hard Drive Interface": "PCIE x 4",
+        "Hard Drive Rotational Speed": "1.00"
+        }
+        }]
+        
+        
+        
+        
+        
+    

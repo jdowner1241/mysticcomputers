@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Saved List</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="icon" href="img/icons8-monitor-64.png"/>
+    </head>
+    <body>
+        <!-- Navbar HeaderS -->
+        <div class="headers">
+            <!-- Navbar Header1 -->
+            <div id="header1">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light header1">
+                    <!-- Container wrapper -->
+                    <div class="container-fluid containerjd">
+                    <div class="header1-1">
+                        <img src="img/indexbutton1.png" id="titleindexbutton"/>
+                        <a id="titleindex">Mystic Computers</a> 
+                    </div>
+                    <div class="header1-2">
+                        <input class="form-control border-secondary rounded-pill " type="search" placeholder="search" id="search" >
+                    </div>
+                    <!-- Collapsible wrapper -->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    </div>
+                    <!-- Collapsible wrapper -->
+                    <!-- Right elements -->
+                    <div class="d-flex align-items-center">
+                        <!-- Icon -->
+                        <button class="rounded me-3">
+                            <a class="text-reset" href="cart.html"><i class="bi bi-bag-fill"></i></a>
+                          </button> 
+                        <!-- Notifications -->
+                        <div class="dropdown me-3">
+                          <button onclick="togglenotification()" class="rounded">
+                            <i class="bi bi-bell-fill"></i>
+                          </button>
+                          <div id="notification-form" class="dropdown-content">
+                            <form style="background-color: #020414; padding: 20px; width: 300px;">
+                              <h5 class="mx-2 mb-3 text-primary">Notifications</h5>
+                              <ul class="list-group notification1">
+                                <li class="list-group-item">Alert 1</li>
+                                <li class="list-group-item">Alert 2</li>
+                                <li class="list-group-item">Alert 2</li>
+                                <li class="list-group-item">Alert 3</li>
+                                <li class="list-group-item">Alert 3</li>
+                              </ul>
+                            </form>
+                          </div>
+                        </div>
+
+                        <!-- Avatar --> 
+                    </div>
+                    <div class="dropdown">
+                      <button onclick="toggleSignIn()" class="rounded">
+                        <i class="bi bi-person-lines-fill"></i>
+                      </button>
+                      <div id="signin-form" class="dropdown-content">
+                        <form style="background-color: #020414; padding: 20px; width: 300px;">
+                          <h5 class="mx-2 mb-3 text-primary">Sign In</h5>
+                          <label for="email"><b>Email</b></label>
+                          <input type="text" placeholder="Enter Email" name="email" required>
+                        
+                          <label for="psw"><b>Password</b></label>
+                          <input type="password" placeholder="Enter Password" name="psw" required>
+                        
+                          <button type="submit" onclick="signIn()">Login</button>
+                        </form>
+                      </div>
+                    </div>
+                    <!-- Right elements -->
+                    </div>
+                    <!-- Container wrapper -->
+                </nav>
+            </div>
+            <!-- Navbar Header1 -->
+            <!-- Navbar Header2 -->
+            <div id="header2">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary header2">
+                    <div class="container">
+                      <div class="collapse navbar-collapse d-flex justify-content-evenly" id="navbarNav">
+                        <ul class="navbar-nav">
+                          <li class="nav-item">
+                            <a class="nav-link px-5 mx-5" href="index.html">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link px-5 mx-5" href="category.html">Category</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link px-5 mx-5" href="savedlist.html">Saved List</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link px-5 mx-5" href="support.html">Support</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+            <!-- Navbar Header2 -->
+        </div>
+        <!-- Navbar HeaderS -->
+         <!-- Mainpage overview -->
+         <div class="container-fluid text-center">
+            <div class="mainbody row containerjd">
+                <!-- page content -->
+                <div class="cbody">
+
+                    <div class="Headersavedlist">
+                        <h1 class="Heading text-primary">Shopping Cart</h1>
+                        <table class="table table-hover table-hover">
+                            <thead>
+                                <tr>
+                                <th scope="col-1"></th>
+                                <th scope="col" class="text-primary">Name</th>
+                                <th scope="col" class="text-primary">Description</th>
+                                <th scope="col-1" class="text-primary">Quantity</th>
+                                <th scope="col-1" class="text-primary">Price</th>
+                                <th scope="col-1" class="text-primary">Cost</th>
+                                <th scope="col-1"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="total-cost" data-value="">
+                                    <th scope="row">
+                                        <img src="img/Google Pixel 7 Pro.jpg" class="savedlistimg" />
+                                    </th>
+                                    <td><h5 class="text-secondary">Google Pixel 7 Pro</h5></td>
+                                    <td><P>5G Android Phone - Unlocked Smartphone with Telephoto/Wide Angle Lens, and 24-Hour Battery - 128GB</P></td>
+                                    <td><p class="amts" data-value="1">1</p></td>
+                                    <td><p class="prices" data-value="749.00">$749.00</p></td>
+                                    <td><p class="total-cost"></p></td>
+                                    <td><button type="button" class="btn btn-primary rounded" onclick="">Remove</button></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <img src="img/Seagate Portable 2TB External Hard Drive HDD.jpg" class="savedlistimg" />
+                                    </th>
+                                    <td><h5 class="text-secondary">Seagate Portable 2TB External Hard Drive HDD</h5></td>
+                                    <td><P>USB 3.0 for PC, Mac, PlayStation, & Xbox -1-Year Rescue Service</P></td>
+                                    <td><p class="amts" data-value="2">2</p></td>
+                                    <td><p class="prices" data-value="56.99">$56.99</p></td>
+                                    <td><p class="total-cost"></p></td>
+                                    <td><button type="button" class="btn btn-primary rounded" onclick="">Remove</button></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <img src="img/Dell 2022 Newest Inspiron 15 Laptop.jpg" class="savedlistimg" />
+                                    </th>
+                                    <td><h5 class="text-secondary">Dell 2022 Newest Inspiron 15 Laptop</h5></td>
+                                    <td><P>15.6" HD Display, Intel Celeron N4020 Processor, 16GB DDR4 RAM, 1TB PCIe SSD, Webcam, HDMI, Wi-Fi, Bluetooth, Windows 11 Home</P></td>
+                                    <td><p class="amts" data-value="1">1</p></td>
+                                    <td><p class="prices" data-value="411.00">$411.00</p></td>
+                                    <td><p class="total-cost"></p></td>
+                                    <td><button type="button" class="btn btn-primary rounded" onclick="">Remove</button></td>
+                                </tr>
+                                <tr class="total-cost" data-value="">
+                                    <th scope="row">
+                                        <img src="img/Dell XPS 13 9310 Touchscreen Laptop.jpg" class="savedlistimg" />
+                                    </th>
+                                    <td><h5 class="text-secondary">Dell XPS 13 9310 Touchscreen Laptop</h5></td>
+                                    <td><P>Special Feature	Fingerprint Reader, High Definition Audio, Backlit Keyboard</P></td>
+                                    <td><p class="amts" data-value="1">1</p></td>
+                                    <td><p class="prices" data-value="1434.97">$1,434.97</p></td>
+                                    <td><p class="total-cost"></p></td>
+                                    <td><button type="button" class="btn btn-primary rounded" onclick="">Remove</button></td>
+                                </tr>
+                                <tr class="total-cost" data-value="">
+                                    <th scope="row">
+                                        <img src="img/Lenovo IdeaPad 1 14 Laptop.jpg" class="savedlistimg" />
+                                    </th>
+                                    <td><h5 class="text-secondary">Lenovo IdeaPad 1 14 Laptop</h5></td>
+                                    <td><P>14.0" HD Display, Intel Celeron N4020, 4GB RAM, 64GB Storage, Intel UHD Graphics 600, Win 11 in S Mode, Cloud Grey</P></td>
+                                    <td><p class="amts" data-value="1">1</p></td>
+                                    <td><p class="prices" data-value="167.89">$167.89</p></td>
+                                    <td><p class="total-cost"></p></td>
+                                    <td><button type="button" class="btn btn-primary rounded" onclick="">Remove</button></td>
+                                </tr>
+                                <hr/>
+                                <tr class="producttableseparator">
+                                  <td></td>
+                                  <td></td>
+                                  <th colspan="1"><h4>Sub Total</h4></th>
+                                  <th colspan="2" ><h4 id="subtotal"></h4></th>
+                              </tr>
+                              <tr class="">
+                                <td></td>
+                                <td></td>
+                                <th colspan="1"><h4>Total (GCT:15%)</h4></th>
+                                <th colspan="2" ><h4 id="total"></h4></th>
+                              </tr>
+                            </tbody>
+                        </table>
+                        <div>
+                          <button class="bg-primary text-white rounded mb-5">Continue to Checkout</button>
+                        </div>    
+                    </div>
+
+                </div>
+                <!-- page content -->
+            </div>
+        </div>
+        <br/>
+        <hr/>
+        <br/>
+        <!-- Mainpage overview -->
+
+        <footer class="container-fluid foot">
+            <div class="containerjd row align-content-center footcontent">
+              <div class="col d-flex justify-content-start align-items-center">
+                <h5>Mystic Computers Limited  &copy; 2023 </h5>
+              </div>
+              <div class="col d-flex justify-content-end align-items-center">
+                <a href="contactus.html">Contact Us </a>
+                <a href="www.facebook.com"><i class="bi bi-facebook p-3"></i></a>
+                <a href="www.instagram.com"><i class="bi bi-instagram"></i></a>
+                <button type="button" class="btn bi bi-whatsapp p-3" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Phone No: 1(876)697-8422">
+                </button>
+              </div>
+            </div> 
+          </footer>
+          <!-- script -->
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+          <script src="script/script.js"></script>
+          <script src="script/fetchproduct.js"></script>
+          <script src="script/fetchproductselect.js"></script>
+          <script src="script/total.js"></script>
+    </body>
+</html>

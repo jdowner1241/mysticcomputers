@@ -1,0 +1,201 @@
+/* .cbody{
+    background-color: rgb(99, 98, 98);
+    width: 80000rem;
+    height: 80vh;
+} */
+.productbackground img{
+    width:100%;
+    height: 400px;
+    object-fit: cover;
+}
+.product-group{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap: 1rem;
+    margin-left:1rem;
+    margin-top:1rem;
+
+
+}
+.item-description{
+    margin: 2rem 3rem;
+}
+.product-buttom-group{
+    background-color: gray;
+    
+}
+.item-description h1{
+color: rgb(20, 20, 19);
+width: 30rem;
+}
+.product-card:nth-child(3){
+    padding-top: 2rem;
+}
+.product-card:nth-child(2){
+    padding-top: 2rem;
+}
+.product-card:nth-child(5){
+    padding-top: 2rem;
+}
+.product-card:nth-child(6){
+    padding-top: 2rem;
+}
+.item-info:nth-child(3){
+  color: blue;
+}
+.product-header{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+.product-title h1{
+    font-size: 2rem;
+    text-align: center;
+}
+.item-info h3,h2{
+    font-size: 14px;
+    
+}
+.item-info{
+    text-align: center;
+    position: relative;
+    align-self: end;
+
+}
+.product{
+    background-color: rgb(229, 224, 224);
+    width: 17rem;
+    height: 23rem;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    transition: all 2ms;
+    border-radius: 1px;
+    margin-right: 1px;
+    cursor: pointer;
+    border-color: gray;
+    box-shadow: 0px 0px 15px -3px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* height: 20vh; */
+}
+.product:hover{
+    transform: scale(1.1);
+}
+
+.image-item{
+    width: 100%;
+    align-self: start;
+    margin-top:10px;
+
+}
+.image-item{
+    align-self: center;
+    padding-top:15px;
+    margin-top:15px;
+}
+.image-item img{
+    width:15rem;
+    height: auto;
+    object-fit: cover;
+}
+.image-item:hover img{
+    transition: all 5s;
+    transform: scale(1.1);
+    
+    
+}
+.product-card:hover{
+    box-shadow: 0px 0px 15px -3px black;
+}
+.button{
+    background-color: rgb(72, 72, 236);
+    color:white;
+    margin-bottom: 5px;
+}
+.button:hover{
+    background-color: rgb(237, 237, 246);
+    border: 1px solid black
+}
+.button2{
+    background-color:transparent;
+    border:none;
+    margin: 0.3rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    transition: all 5ms;
+}
+.button2:hover{
+    background-color: rgb(237, 237, 246);
+    border: 1px solid black;
+}
+.product-title h1{
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+.button1{
+    border: none;
+}
+ 
+.content h1{
+ margin-right: 10rem;
+ font-size: rem;
+}
+
+
+
+.main-grouping{
+    display: flex;   
+}
+
+.option{
+display: grid; 
+grid-template-columns: 1fr 1fr;
+gap:12px;
+    
+    
+}
+.option h2{
+font-size: 1rem;
+background-color: rgb(206, 203, 203);
+padding: 6px;
+}
+
+
+.des{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+input{
+    border: none;
+    padding:9px;
+    width: 2rem;
+    height:3rem;
+    font-size: 1rem;
+    background-color: rgb(228, 228, 228);
+    /* position: absolute; */
+}
+.des-main h2{
+    margin-top: 1rem;
+    
+     
+}
+.group-text{
+    display: flex;
+    gap:5px;
+    font-size: 1rem;
+    
+}
+.tick-box input{
+    border: none;
+
+}
+    .des-main{
+      margin-top: 1rem;  
+    }
+
+.btn-clear{
+    color: red;
+}

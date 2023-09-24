@@ -1,0 +1,47 @@
+[
+    {
+        "Name": "",
+        "Price": ,
+        "Cost": "",
+        "Brand": "",
+        "Model": "",
+        "Image": "",
+        "Screen_Size": "",
+        "Color": "",
+        "Storage": "",
+        "CPU": "",
+        "Memory": "",
+        "OS": "",
+    
+        "Technical_Details": {
+            "Processor": "",
+            "Chipset_Brand": "",
+            "Graphics" : "",
+            "Graphics_Type" : "",
+            "Video_Memory_Size": "",
+            "Memory_Size": "",
+            "Memory_Speed": "",
+            "Memory_Type" : "",
+            "Display": "",
+            "Max_Screen_Resolution": "",
+            "Storage_Size" : "",
+            "Storage_Type" : "",
+            "Storage_Feature": "",
+            "Operating_System": "",
+            "camera": "",
+            "keyboard": "",
+            "connectivity": "",
+            "Special_Feature": "",
+            "accessories": ""
+        },
+        "Other_Details": {
+            "brand": "",
+            "series": "",
+            "Item_model_number": "",
+            "Hardware_Platform": "",
+            "Item_Weight": "",
+            "Package_Dimensions": ""
+            }
+    },
+    ]
+        

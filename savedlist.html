@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Saved List</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="icon" href="img/icons8-monitor-64.png"/>
+    </head>
+    <body>
+        <!-- Navbar HeaderS -->
+        <div class="headers">
+            <!-- Navbar Header1 -->
+            <div id="header1">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light header1">
+                    <!-- Container wrapper -->
+                    <div class="container-fluid containerjd">
+                    <div class="header1-1">
+                        <img src="img/indexbutton1.png" id="titleindexbutton"/>
+                        <a id="titleindex">Mystic Computers</a> 
+                    </div>
+                    <div class="header1-2">
+                        <input class="form-control border-secondary rounded-pill " type="search" placeholder="search" id="search" >
+                    </div>
+                    <!-- Collapsible wrapper -->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    </div>
+                    <!-- Collapsible wrapper -->
+                    <!-- Right elements -->
+                    <div class="d-flex align-items-center">
+                        <!-- Icon -->
+                        <button class="rounded me-3">
+                            <a class="text-reset" href="cart.html"><i class="bi bi-bag-fill"></i></a>
+                          </button> 
+                        <!-- Notifications -->
+                        <div class="dropdown me-3">
+                          <button onclick="togglenotification()" class="rounded">
+                            <i class="bi bi-bell-fill"></i>
+                          </button>
+                          <div id="notification-form" class="dropdown-content">
+                            <form style="background-color: #020414; padding: 20px; width: 300px;">
+                              <h5 class="mx-2 mb-3 text-primary">Notifications</h5>
+                              <ul class="list-group notification1">
+                                <li class="list-group-item">Alert 1</li>
+                                <li class="list-group-item">Alert 2</li>
+                                <li class="list-group-item">Alert 2</li>
+                                <li class="list-group-item">Alert 3</li>
+                                <li class="list-group-item">Alert 3</li>
+                              </ul>
+                            </form>
+                          </div>
+                        </div>
+
+                        <!-- Avatar --> 
+                    </div>
+                    <div class="dropdown">
+                      <button onclick="toggleSignIn()" class="rounded">
+                        <i class="bi bi-person-lines-fill"></i>
+                      </button>
+                      <div id="signin-form" class="dropdown-content">
+                        <form style="background-color: #020414; padding: 20px; width: 300px;">
+                          <h5 class="mx-2 mb-3 text-primary">Sign In</h5>
+                          <label for="email"><b>Email</b></label>
+                          <input type="text" placeholder="Enter Email" name="email" required>
+                        
+                          <label for="psw"><b>Password</b></label>
+                          <input type="password" placeholder="Enter Password" name="psw" required>
+                        
+                          <button type="submit" onclick="signIn()">Login</button>
+                        </form>
+                      </div>
+                    </div>
+                    <!-- Right elements -->
+                    </div>
+                    <!-- Container wrapper -->
+                </nav>
+            </div>
+            <!-- Navbar Header1 -->
+            <!-- Navbar Header2 -->
+            <div id="header2">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary header2">
+                    <div class="container">
+                      <div class="collapse navbar-collapse d-flex justify-content-evenly" id="navbarNav">
+                        <ul class="navbar-nav">
+                          <li class="nav-item">
+                            <a class="nav-link px-5 mx-5" href="index.html">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link px-5 mx-5" href="category.html">Category</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link px-5 mx-5" href="savedlist.html">Saved List</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link px-5 mx-5" href="support.html">Support</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+            <!-- Navbar Header2 -->
+        </div>
+        <!-- Navbar HeaderS -->
+        <!-- Mainpage overview -->
+        <div class="container-fluid text-center">
+            <div class="mainbody  row containerjd">
+                <div class="cbody">
+                <div class="Headersavedlist">
+                    <h1 class="Heading text-primary">Saved List</h1>
+                    <table class="table table-hover table-striped table-borderless border-primary">
+                        <thead>
+                            <tr>
+                            <th scope="col-1"></th>
+                            <th scope="col" class="text-primary">Name</th>
+                            <th scope="col" class="text-primary">Description</th>
+                            <th scope="col-1" class="text-primary">Cost</th>
+                            <th scope="col-1"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="">
+                                <th scope="row">
+                                    <img src="img/Logitech H390 Wired Headset .jpg" class="savedlistimg" />
+                                </th>
+                                <td><h5 class="text-secondary">Logitech H390 Wired Headset</h5></td>
+                                <td><P>Stereo Headphones with Noise Cancelling Microphone, USB, In-Line Controls, Works with Chromebook - Black</P></td>
+                                <td><p>$21.88</p></td>
+                                <td><button type="button" class="btn btn-primary rounded" onclick="">Add to Cart</button></td>
+                            </tr>
+                            <tr class="">
+                                <th scope="row">
+                                    <img src="img/Seagate Portable 2TB External Hard Drive HDD.jpg" class="savedlistimg" />
+                                </th>
+                                <td><h5 class="text-secondary">Seagate Portable 2TB External Hard Drive HDD</h5></td>
+                                <td><P>USB 3.0 for PC, Mac, PlayStation, & Xbox -1-Year Rescue Service</P></td>
+                                <td><p>$56.99</p></td>
+                                <td><button type="button" class="btn btn-primary rounded" onclick="">Add to Cart</button></td>
+                            </tr>
+                            <tr class="">
+                                <th scope="row">
+                                    <img src="img/Hisense 55-Inch Class R6 Series Dolby Vision HDR 4K UHD Roku Smart TV.jpg" class="savedlistimg" />
+                                </th>
+                                <td><h5 class="text-secondary">Hisense 55-Inch Class R6 Series Dolby Vision HDR 4K UHD Roku Smart TV</h5></td>
+                                <td><P>4K UltraHD delivers more than four times the resolution of a regular 1080p highdefinition screen</P></td>
+                                <td><p>$269.99</p></td>
+                                <td><button type="button" class="btn btn-primary rounded" onclick="">Add to Cart</button></td>
+                            </tr>
+                            <tr class="">
+                                <th scope="row">
+                                    <img src="img/SAMSUNG 85-inch Class QN900A Series.jpg" class="savedlistimg" />
+                                </th>
+                                <td><h5 class="text-secondary">SAMSUNG 85-inch Class QN900A Series</h5></td>
+                                <td><P>QUANTUM MATRIX TECHNOLOGY WITH MINI LED: A brilliantly intense picture powered by tiny hyper-focused light cells</P></td>
+                                <td><p>$9847.28</p></td>
+                                <td><button type="button" class="btn btn-primary rounded" onclick="">Add to Cart</button></td>
+                            </tr>
+                            <tr class="">
+                                <th scope="row">
+                                    <img src="img/HP DeskJet 2755e Wireless Color All-in-One Printer.jpg" class="savedlistimg" />
+                                </th>
+                                <td><h5 class="text-secondary">HP DeskJet 2755e Wireless Color All-in-One Printer</h5></td>
+                                <td><P>Print, copy and scan in color, plus mobile and wireless printing</P></td>
+                                <td><p>$84.89</p></td>
+                                <td><button type="button" class="btn btn-primary rounded" onclick="">Add to Cart</button></td>
+                            </tr>
+                        </tbody>
+                    </table>    
+                </div>
+
+                </div>
+            </div>
+        </div>
+        <br/>
+        <hr/>
+        <br/>
+        <!-- Mainpage overview -->
+
+        <footer class="container-fluid foot">
+            <div class="containerjd row align-content-center footcontent">
+              <div class="col d-flex justify-content-start align-items-center">
+                <h5>Mystic Computers Limited  &copy; 2023 </h5>
+              </div>
+              <div class="col d-flex justify-content-end align-items-center">
+                <a href="contactus.html">Contact Us </a>
+                <a href="www.facebook.com"><i class="bi bi-facebook p-3"></i></a>
+                <a href="www.instagram.com"><i class="bi bi-instagram"></i></a>
+                <button type="button" class="btn bi bi-whatsapp p-3" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Phone No: 1(876)697-8422">
+                </button>
+              </div>
+            </div> 
+          </footer>
+          <!-- script -->
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+          <script src="script/script.js"></script>
+          <script src="script/fetchproduct.js"></script>
+          <script src="script/fetchproductselect.js"></script>
+</body>
+
+</html>
